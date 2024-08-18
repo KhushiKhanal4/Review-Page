@@ -64,3 +64,31 @@ const TestimonialCard = ({ bg, image, quote, Name }) => (
   </div>
 );
 
+const TestimonialSlider = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    pauseOnHover: true,
+  };
+  return (
+    <div>
+      <h1>Testimonials</h1>
+      <h2>What our customers are saying</h2>
+      <Slider{...settings}>
+        {people.map((testimonial) =>(
+    <div key={testimonial.id}>
+      <TestimonialCard {...testimonial}/>
+    </div>
+  ))}
+      </Slider>
+    </div>
+  );
+}
+
+export default TestimonialSlider;
