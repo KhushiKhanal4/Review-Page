@@ -6,7 +6,7 @@ const people=[
   {
       id:1,
       bg:"aqua.svg",
-      image:"lady1.jpg",
+      image:"src/assets/lady1.jpg",
       quote:
       "Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting.",
       Name:"Emilia Clarke"
@@ -14,7 +14,7 @@ const people=[
   {
       id:2,
       bg:"green.svg",
-      image:"man1.jpg",
+      image:"src/assets/man1.jpg",
       quote:
       "Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting.",
       Name:"Andrew Grafield"
@@ -22,7 +22,7 @@ const people=[
   {
       id:3,
       bg:"purple.svg",
-      image:"lady2.jpg",
+      image:"src/assets/lady2.jpg",
       quote:
       "Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting.",
       Name:"Alison Dutch"
@@ -30,7 +30,7 @@ const people=[
   {
       id:4,
       bg:"orange.svg",
-      image:"lady3.jpg",
+      image:"src/assets/lady3.jpg",
       quote:
       "Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting.",
       Name:"Rihana Smith "
@@ -38,7 +38,7 @@ const people=[
   {
       id:5,
       bg:"pink.svg",
-      image:"man2.jpg",
+      image:"src/assets/man2.jpg",
       quote:
       "Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting.",
       Name:"James Thompson"
@@ -46,7 +46,7 @@ const people=[
   {
       id:6,
       bg:"red.svg",
-      image:"man3.jpg",
+      image:"src/assets/man3.jpg",
       quote:
       "Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting.",
       Name:"Marcus Klin"
@@ -58,7 +58,7 @@ const TestimonialCard = ({ bg, image, quote, Name }) => (
 
     <FaQuoteLeft />
     <p>{quote}</p>
-    <img src="{image}" alt="{Name}" />
+    <img src={image} alt={Name} />
     <h3>{Name}</h3>
 
   </div>
