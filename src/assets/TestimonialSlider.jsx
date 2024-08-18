@@ -5,62 +5,71 @@ import { FaQuoteLeft } from "react-icons/fa";
 const people = [
   {
     id: 1,
-    bg: "aqua.svg",
+    Name: "Sarah M.",
+    title:"~Project Manager",
     image: "src/assets/lady1.jpg",
     quote:
-      "Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting.",
-    Name: "Emilia Clarke"
+      '"Notion has completely transformed the way our team collaborates. The ability to create shared workspaces with customizable databases has streamlined our project management process. I love how everything is in one place—notes, tasks, timelines—and how easy it is to integrate with other tools we use. It is a game-changer for productivity!"',
+    
   },
   {
     id: 2,
-    bg: "green.svg",
+    Name: "John D.",
+    title:"~Freelance Writer",
     image: "src/assets/man1.jpg",
     quote:
-      "Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting.",
-    Name: "Andrew Grafield"
+      '"As a freelance writer, staying organized is key to meeting deadlines and managing multiple clients. Notion has been my go-to tool for organizing my writing projects, tracking deadlines, and storing research. The clean interface and flexible layout options allow me to tailor my workspace exactly to my needs. It is like having my own personal assistant!"',
+    
   },
   {
     id: 3,
-    bg: "purple.svg",
+    Name: "Alison Dutch",
+    title: "~Entrepreneur",
     image: "src/assets/lady2.jpg",
     quote:
-      "Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting.",
-    Name: "Alison Dutch"
+      '"Running a startup means juggling a lot of tasks, and Notion has been essential for keeping everything on track. From brainstorming sessions to project planning and even managing my personal to-do list, Its flexibility lets me handle it all in one place. The ability to collaborate with my team in real-time has also sped up our workflow significantly. Highly recommend it for any entrepreneur!"'
+
+,
+    
   },
   {
     id: 4,
-    bg: "orange.svg",
+   Name: "Rihana Smith",
+   title:"~Student",
     image: "src/assets/lady3.jpg",
     quote:
-      "Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting.",
-    Name: "Rihana Smith "
+      '"Notion has been a lifesaver for my studies! I use it to take notes during lectures, organize my assignments, and keep track of deadlines. The ability to create detailed, linked notes with embedded images and files helps me study more effectively. Plus, the templates make it super easy to set up new projects and keep everything in order. I cannot imagine school without it!"',
+    
   },
   {
     id: 5,
-    bg: "pink.svg",
+    Name: "James Thompson",
+    title:"~Designer",
     image: "src/assets/man2.jpg",
     quote:
-      "Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting.",
-    Name: "James Thompson"
+      '"As a designer, I appreciate tools that are not only functional but also visually appealing. Notion hits both marks perfectly. I use it to organize my design projects, client feedback, and even to create mood boards. The drag-and-drop functionality and customizable templates are fantastic for brainstorming and keeping my creative process organized. It is a must-have tool for any designer!"',
+    
   },
   {
     id: 6,
-    bg: "red.svg",
+    Name: "Michael T",
+    title:"~Software Engineer",
     image: "src/assets/man3.jpg",
     quote:
-      "Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting.",
-    Name: "Marcus Klin"
+      '"Notion has become an indispensable tool in my daily workflow. Whether I am tracking tasks, documenting code, or managing project timelines, Its versatility and intuitive interface make it easy to stay organized and productive. It is the perfect all-in-one solution for anyone in tech!"',
+    
   },
 ]
 
-const TestimonialCard = ({ image, quote, Name }) => (
-  <div className="bg-gradient-to-r from-[#FFCB76] to-[#fd7b24] flex-col justify-center items-center justify-items-center max-w-xl m-auto p-10 rounded-2xl ">
+const TestimonialCard = ({ image, quote, Name ,title}) => (
+  <div className="bg-gradient-to-tr from-[#FFCB76] to-[#fa7260] flex-col justify-center items-center justify-items-center max-w-xl m-auto p-10 rounded-2xl ">
     <span className="w-full ">
-      <FaQuoteLeft className="text-orange-950 text-7xl items-start mb-3" />
+      <FaQuoteLeft className="text-orange-950 text-7xl items-start " />
     <img src={image} alt={Name} className="w-2/6 rounded-full mx-40 " />
-    <h3 className="ml-[180px] text-md m-3 underline underline-offset-2 font-medium" >{Name}</h3>
-    </span>
-    <p className="mx-1 text-orange-950 font-medium font-sans">{quote}</p>
+    <h3 className="ml-[183px] text-lg mt-3 underline underline-offset-2 font-normal tracking-wide" >{Name}</h3>
+    <h4 className="ml-[183px] text-sm mb-1 font-light tracking-wider">{title}</h4>
+    </span> 
+    <p className="mx-1 text-orange-950 font-medium text-sm font-sans">{quote}</p>
 
   </div>
 );
@@ -79,9 +88,9 @@ const TestimonialSlider = () => {
   };
   return (
     <div>
-      <h1 className="text-5xl flex justify-center items-center mt-16 font-serif font-semibold text-[#46260e] ">Testimonials</h1>
-      <h2 className="text-3xl flex justify-center items-center mt-2 font-serif font-semibold text-[#351b09] ">What our customers are saying</h2>
-      <Slider{...settings} className="max-w-2xl mx-auto my-16 py-5">
+      <h1 className="text-3xl flex justify-center items-center mt-8 font-serif font-semibold text-[#46260e] ">Testimonials</h1>
+      <h2 className="text-xl flex justify-center items-center my-1 font-serif font-semibold text-[#351b09] ">What our customers are saying</h2>
+      <Slider{...settings} className="max-w-2xl mx-auto mt-5 ">
         {people.map((testimonial) => (
           <div key={testimonial.id}>
             <TestimonialCard {...testimonial} />
