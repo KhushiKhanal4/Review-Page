@@ -1,12 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Slider from './Slider.jsx'
+import React from "react";
+import TestimonialSlider from "./TestimonialSlider"; // Adjust the import based on your file structure
 
 function App() {
   return (
-    <Slider />
-  )
+    <div className="App">
+      <TestimonialSlider />
+    </div>
+  );
 }
 
-export default App
+export default App;
