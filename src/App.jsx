@@ -1,5 +1,5 @@
 import React from "react";
-import TestimonialSlider from "./assets/TestimonialSlider"; // Adjust the import based on your file structure
+import TestimonialSlider from "./TestimonialSlider"; 
 
 function App() {
   return (
