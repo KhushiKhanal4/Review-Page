@@ -62,7 +62,7 @@ const people = [
 ]
 
 const TestimonialCard = ({ image, quote, Name, title }) => (
-  <div className="bg-gradient-to-tr from-[#FFCB76] to-[#fa7260] flex-col justify-center items-center max-w-xl m-auto p-6 md:p-10 rounded-2xl">
+  <div className="bg-gradient-to-tr from-[#FFCB76] to-[#fa7260] flex-col justify-center items-center max-w-lg m-auto p-6 md:p-10 rounded-2xl">
     <span className="w-full text-center">
       <FaQuoteLeft className="text-orange-950 text-4xl md:text-7xl mb-4" />
       <img
@@ -94,10 +94,10 @@ const TestimonialSlider = () => {
     pauseOnHover: true,
   };
   return (
-    <div>
-      <h1 className="text-2xl flex justify-center items-center mt-8 font-serif font-semibold text-[#46260e] ">Testimonials</h1>
-      <h2 className="text-lg flex justify-center items-center my-1 font-serif font-semibold text-[#351b09] ">What our customers are saying</h2>
-      <Slider{...settings} className="max-w-2xl mx-auto mt-5 ">
+    <div className="p-9">
+      <h1 className="text-2xl sm:text-3xl flex justify-center items-center mt-8 font-serif font-semibold text-[#46260e] ">Testimonials</h1>
+      <h2 className="text-sm sm:text-lg text-center flex justify-center items-center my-1 font-serif font-semibold text-[#351b09] ">What our customers are saying</h2>
+      <Slider{...settings} className="max-w-screen-sm mx-auto mt-5 ">
         {people.map((testimonial) => (
           <div key={testimonial.id}>
             <TestimonialCard {...testimonial} />
