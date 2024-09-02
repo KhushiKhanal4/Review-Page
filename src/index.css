@@ -6,8 +6,5 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  @apply bg-gradient-to-b from-[#c47b79ce] to-[#864af5b7] w-full h-full overflow-y-auto pb-20;
 
-}
 

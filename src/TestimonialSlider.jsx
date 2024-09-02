@@ -62,20 +62,20 @@ const people = [
 ]
 
 const TestimonialCard = ({ image, quote, Name, title }) => (
-  <div className="bg-gradient-to-tr from-[#FFCB76] to-[#fa7260] flex-col justify-center items-center max-w-lg m-auto p-6 md:p-10 rounded-2xl">
+  <div className="bg-gradient-to-tr from-[#FFCB76] to-[#fa7260] flex-col justify-center items-center max-w-lg m-auto p-6 md:p-10 rounded-2xl dark:bg-gradient-to-tr dark:from-[#000000] dark:to-[#ffd445]">
     <span className="w-full text-center">
-      <FaQuoteLeft className="text-orange-950 text-4xl md:text-7xl mb-4" />
+      <FaQuoteLeft className="text-orange-950 text-4xl md:text-7xl mb-4 dark:text-[#fac9a3]" />
       <img
         src={image}
         alt={Name}
         className="w-2/6 md:w-1/4 rounded-full mx-auto"
       />
-      <h3 className="text-lg mt-3 underline underline-offset-2 font-normal tracking-wide">
+      <h3 className="text-lg mt-3 underline underline-offset-2 font-normal tracking-wide dark:text-white">
         {Name}
       </h3>
-      <h4 className="text-sm mb-1 font-light tracking-wider">{title}</h4>
+      <h4 className="text-sm mb-1 font-light tracking-wider  dark:text-white">{title}</h4>
     </span>
-    <p className="mx-1 text-orange-950 font-medium text-sm md:text-base font-sans mt-4">
+    <p className="mx-1 text-orange-950 font-medium text-sm md:text-base font-sans mt-4 dark:text-[#fac9a3]">
       {quote}
     </p>
   </div>
@@ -95,8 +95,8 @@ const TestimonialSlider = () => {
   };
   return (
     <div className="p-9">
-      <h1 className="text-2xl sm:text-3xl flex justify-center items-center mt-8 font-serif font-semibold text-[#46260e] ">Testimonials</h1>
-      <h2 className="text-sm sm:text-lg text-center flex justify-center items-center my-1 font-serif font-semibold text-[#351b09] ">What our customers are saying</h2>
+      <h1 className="text-2xl sm:text-3xl flex justify-center items-center mt-8 font-serif font-semibold text-[#46260e] dark:text-[#fac9a3] ">Testimonials</h1>
+      <h2 className="text-sm sm:text-lg text-center flex justify-center items-center my-1 font-serif font-semibold text-[#351b09] dark:text-[#fac9a3] ">What our customers are saying</h2>
       <Slider{...settings} className="max-w-screen-sm mx-auto mt-5 ">
         {people.map((testimonial) => (
           <div key={testimonial.id}>
