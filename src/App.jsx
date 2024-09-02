@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, {useState, useEffect } from "react";
 import TestimonialSlider from "./TestimonialSlider"; 
 import ThemeButton from "./ThemeButton";
 import { ThemeProvider } from "./context/Theme";
